@@ -1,0 +1,374 @@
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button,
+input,
+a,
+textarea {
+  outline: none;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+/* /reset */
+/* rubik-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-v28-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/rubik-v28-cyrillic_latin-regular.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* rubik-500 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/rubik-v28-cyrillic_latin-500.woff2") format("woff2"), url("../fonts/rubik-v28-cyrillic_latin-500.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* settings */
+.row-eiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -80px;
+}
+.row-eiv > * {
+  word-wrap: break-word;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 80px;
+}
+
+.wrapper-eiv {
+  width: 100%;
+  max-width: 1480px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 768px) {
+  .wrapper-eiv {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper-eiv {
+    padding-right: 15px;
+  }
+}
+
+.page-eiv {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content-eiv {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+/* /settings */
+/* invitation-eiv */
+.invitation-eiv {
+  padding: 120px 0;
+  font-family: "Rubik";
+}
+.invitation-eiv__title {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 80px;
+}
+.invitation-eiv__title span {
+  border-bottom: 5px solid #ED1D25;
+}
+.invitation-eiv .row-eiv {
+  margin-top: -40px;
+}
+.invitation-eiv .row-eiv > * {
+  margin-top: 40px;
+}
+.invitation-eiv__col-big {
+  width: 66.6666666667%;
+}
+@media screen and (max-width: 1050px) {
+  .invitation-eiv__col-big {
+    width: 58.3333333333%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .invitation-eiv__col-big {
+    width: 100%;
+  }
+}
+.invitation-eiv__col-small {
+  width: 33.3333333333%;
+}
+@media screen and (max-width: 1050px) {
+  .invitation-eiv__col-small {
+    width: 41.6666666667%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .invitation-eiv__col-small {
+    width: 100%;
+  }
+}
+.invitation-eiv__banner {
+  padding: 35px 40px;
+  border-radius: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0C94CE), to(rgba(12, 148, 206, 0.5)));
+  background: -o-linear-gradient(top, #0C94CE 0%, rgba(12, 148, 206, 0.5) 100%);
+  background: linear-gradient(180deg, #0C94CE 0%, rgba(12, 148, 206, 0.5) 100%);
+  color: #fff;
+}
+.invitation-eiv__banner-title {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+.invitation-eiv__banner-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+.invitation-eiv__banner-img {
+  max-width: 85%;
+}
+.invitation-eiv__form-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 15px;
+}
+.invitation-eiv__form-input {
+  margin-bottom: 15px;
+}
+.invitation-eiv__form-input input {
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  border-radius: 4px;
+  background-color: #EAEEF2;
+  border: none;
+  outline: none;
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.invitation-eiv__form-input input::-webkit-input-placeholder {
+  color: #6A7377;
+}
+.invitation-eiv__form-input input::-moz-placeholder {
+  color: #6A7377;
+}
+.invitation-eiv__form-input input:-ms-input-placeholder {
+  color: #6A7377;
+}
+.invitation-eiv__form-input input::-ms-input-placeholder {
+  color: #6A7377;
+}
+.invitation-eiv__form-input input::placeholder {
+  color: #6A7377;
+}
+.invitation-eiv__form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 16px 40px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ED1D25), to(#F51A22));
+  background-image: -o-linear-gradient(top, #ED1D25 0%, #F51A22 100%);
+  background-image: linear-gradient(180deg, #ED1D25 0%, #F51A22 100%);
+  font-family: "Rubik";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+}
+.invitation-eiv__form-btn:hover .invitation-eiv__form-btn-bg {
+  opacity: 1;
+}
+.invitation-eiv__form-btn:hover .invitation-eiv__form-btn-text svg {
+  -webkit-transform: translate(5px, 0);
+  -ms-transform: translate(5px, 0);
+  transform: translate(5px, 0);
+}
+.invitation-eiv__form-btn-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 4px;
+  background-color: #6A7377;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.invitation-eiv__form-btn-text {
+  position: relative;
+  z-index: 2;
+}
+.invitation-eiv__form-btn-text svg {
+  max-width: 19px;
+  max-height: 14px;
+  margin-left: 10px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.invitation-eiv__form-sub {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.invitation-eiv__form-sub a {
+  color: #0C94CE;
+  text-decoration: none;
+}
+.invitation-eiv__form-sub a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .invitation-eiv {
+    padding: 40px 0;
+  }
+  .invitation-eiv__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .invitation-eiv__banner {
+    padding: 20px;
+  }
+  .invitation-eiv__banner-img {
+    max-width: none;
+  }
+  .invitation-eiv__banner-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .invitation-eiv__banner-text {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  .invitation-eiv__form-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .invitation-eiv__form-input {
+    margin-bottom: 10px;
+  }
+  .invitation-eiv__form-input input {
+    height: 50px;
+    font-size: 15px;
+  }
+  .invitation-eiv__form-btn {
+    padding: 14px 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .invitation-eiv__form-sub {
+    font-size: 13px;
+  }
+  .invitation-eiv .row-eiv {
+    margin-top: -30px;
+  }
+  .invitation-eiv .row-eiv > * {
+    margin-top: 30px;
+  }
+}
+
+/* /invitation-eiv */
