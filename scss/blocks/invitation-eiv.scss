@@ -6,24 +6,26 @@
     font-size: 64px;
     font-weight: 500;
     line-height: 120%;
-    margin-bottom: 80px;
+    margin-bottom: 85px;
     span {
       border-bottom: 5px solid $primary_color;
     }
   }
   .row-eiv {
     margin-top: -40px;
+    margin-left: -85px;
     > * {
       margin-top: 40px;
+      padding-left: 85px;
     }
   }
   &__col-big {
-    @include col(8);
+    @include col(8.14);
     @include col-md(7);
     @include col-sm(12);
   }
   &__col-small {
-    @include col(4);
+    @include col(3.86);
     @include col-md(5);
     @include col-sm(12);
   }
@@ -145,10 +147,11 @@
     padding: 40px 0;
     &__title {
       font-size: 30px;
-      margin-bottom: 30px;
+      margin-bottom: 33px;
     }
     &__banner {
       padding: 20px;
+      border-radius: 8px;
     }
     &__banner-img {
       max-width: none;
@@ -159,7 +162,7 @@
     }
     &__banner-text {
       font-size: 15px;
-      margin-bottom: 0;
+      margin-bottom: 6px;
     }
     &__form-title {
       font-size: 20px;

@@ -147,19 +147,21 @@ h1, h2, h3 {
   font-size: 64px;
   font-weight: 500;
   line-height: 120%;
-  margin-bottom: 80px;
+  margin-bottom: 85px;
 }
 .invitation-eiv__title span {
   border-bottom: 5px solid #ED1D25;
 }
 .invitation-eiv .row-eiv {
   margin-top: -40px;
+  margin-left: -85px;
 }
 .invitation-eiv .row-eiv > * {
   margin-top: 40px;
+  padding-left: 85px;
 }
 .invitation-eiv__col-big {
-  width: 66.6666666667%;
+  width: 67.8333333333%;
 }
 @media screen and (max-width: 1050px) {
   .invitation-eiv__col-big {
@@ -172,7 +174,7 @@ h1, h2, h3 {
   }
 }
 .invitation-eiv__col-small {
-  width: 33.3333333333%;
+  width: 32.1666666667%;
 }
 @media screen and (max-width: 1050px) {
   .invitation-eiv__col-small {
@@ -328,10 +330,11 @@ h1, h2, h3 {
   }
   .invitation-eiv__title {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
   }
   .invitation-eiv__banner {
     padding: 20px;
+    border-radius: 8px;
   }
   .invitation-eiv__banner-img {
     max-width: none;
@@ -342,7 +345,7 @@ h1, h2, h3 {
   }
   .invitation-eiv__banner-text {
     font-size: 15px;
-    margin-bottom: 0;
+    margin-bottom: 6px;
   }
   .invitation-eiv__form-title {
     font-size: 20px;
