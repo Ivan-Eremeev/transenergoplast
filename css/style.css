@@ -224,7 +224,7 @@ h1, h2, h3 {
   padding: 0 20px;
   border-radius: 4px;
   background-color: #EAEEF2;
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   font-family: "Rubik";
   font-size: 18px;
@@ -245,6 +245,12 @@ h1, h2, h3 {
 }
 .invitation-eiv__form-input input::placeholder {
   color: #6A7377;
+}
+.invitation-eiv__form-input--error input {
+  border-color: #ED1D25;
+}
+.invitation-eiv__form-input--success input {
+  border-color: green;
 }
 .invitation-eiv__form-btn {
   display: -webkit-box;

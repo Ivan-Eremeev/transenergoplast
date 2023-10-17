@@ -67,7 +67,7 @@
       padding: 0 20px;
       border-radius: 4px;
       background-color: #EAEEF2;
-      border: none;
+      border: 1px solid transparent;
       outline: none;
       font-family: "Rubik";
       font-size: 18px;
@@ -75,6 +75,16 @@
       line-height: 150%;
       &::placeholder {
         color: #6A7377;
+      }
+    }
+    &--error {
+      input {
+        border-color: $primary_color;
+      }
+    }
+    &--success {
+      input {
+        border-color: green;
       }
     }
   }
