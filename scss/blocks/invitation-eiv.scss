@@ -2,6 +2,7 @@
 .invitation-eiv { 
   padding: 120px 0;
   font-family: "Rubik";
+  color: #2E3538;
   &__title {
     font-size: 64px;
     font-weight: 500;
@@ -98,20 +99,28 @@
     padding: 16px 40px;
     margin-bottom: 15px;
     border-radius: 4px;
-    background-image: linear-gradient(180deg, #ED1D25 0%, #F51A22 100%);
     font-family: "Rubik";
     font-size: 20px;
     font-weight: 500;
     line-height: 140%;
     text-align: center;
-    color: #fff;
     cursor: pointer;
     user-select: none;
     position: relative;
-    &:hover {
-      .invitation-eiv__form-btn-bg {
-        opacity: 1;
+    &--red {
+      background-image: linear-gradient(180deg, #ED1D25 0%, #F51A22 100%);
+      color: #fff;
+      &:hover {
+        .invitation-eiv__form-btn-bg {
+          opacity: 1;
+        }
       }
+    }
+    &--gray {
+      background-color: #E0E4E8;
+      color: #2E3538;
+    }
+    &:hover {
       .invitation-eiv__form-btn-text {
         svg {
           transform: translate(5px,0);
@@ -151,6 +160,15 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+  &__success-text {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 130%;
+    margin-bottom: 25px;
+    p {
+      margin-bottom: 20px;
     }
   }
   @media (max-width: $break_sm) {
@@ -197,6 +215,13 @@
       margin-top: -30px;
       > * {
         margin-top: 30px;
+      }
+    }
+    &__success-text {
+      font-size: 20px;
+      margin-bottom: 20px;
+      p {
+        margin-bottom: 10px;
       }
     }
   }

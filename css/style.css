@@ -142,6 +142,7 @@ h1, h2, h3 {
 .invitation-eiv {
   padding: 120px 0;
   font-family: "Rubik";
+  color: #2E3538;
 }
 .invitation-eiv__title {
   font-size: 64px;
@@ -268,15 +269,11 @@ h1, h2, h3 {
   padding: 16px 40px;
   margin-bottom: 15px;
   border-radius: 4px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ED1D25), to(#F51A22));
-  background-image: -o-linear-gradient(top, #ED1D25 0%, #F51A22 100%);
-  background-image: linear-gradient(180deg, #ED1D25 0%, #F51A22 100%);
   font-family: "Rubik";
   font-size: 20px;
   font-weight: 500;
   line-height: 140%;
   text-align: center;
-  color: #fff;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -284,8 +281,18 @@ h1, h2, h3 {
   user-select: none;
   position: relative;
 }
-.invitation-eiv__form-btn:hover .invitation-eiv__form-btn-bg {
+.invitation-eiv__form-btn--red {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ED1D25), to(#F51A22));
+  background-image: -o-linear-gradient(top, #ED1D25 0%, #F51A22 100%);
+  background-image: linear-gradient(180deg, #ED1D25 0%, #F51A22 100%);
+  color: #fff;
+}
+.invitation-eiv__form-btn--red:hover .invitation-eiv__form-btn-bg {
   opacity: 1;
+}
+.invitation-eiv__form-btn--gray {
+  background-color: #E0E4E8;
+  color: #2E3538;
 }
 .invitation-eiv__form-btn:hover .invitation-eiv__form-btn-text svg {
   -webkit-transform: translate(5px, 0);
@@ -329,6 +336,15 @@ h1, h2, h3 {
 }
 .invitation-eiv__form-sub a:hover {
   text-decoration: underline;
+}
+.invitation-eiv__success-text {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 25px;
+}
+.invitation-eiv__success-text p {
+  margin-bottom: 20px;
 }
 @media (max-width: 768px) {
   .invitation-eiv {
@@ -377,6 +393,13 @@ h1, h2, h3 {
   }
   .invitation-eiv .row-eiv > * {
     margin-top: 30px;
+  }
+  .invitation-eiv__success-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .invitation-eiv__success-text p {
+    margin-bottom: 10px;
   }
 }
 
